@@ -1,0 +1,43 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Theme Resources -->
+    <!-- http://www.colourlovers.com/palette/1422878 -->
+    
+    <!-- General Purpose -->
+    <SolidColorBrush x:Key="TenPercentDarkerBrush"
+                     Color="Black"
+                     Opacity=".1" />
+    <SolidColorBrush x:Key="TenPercentLighterBrush"
+                     Color="White"
+                     Opacity=".1" />
+    <SolidColorBrush x:Key="HighlightBrush"
+                     Color="#8882A8" />
+
+    <!-- Header -->
+    <SolidColorBrush x:Key="TitlebarBackgroundBrush"
+                     Color="#141426" />
+    <SolidColorBrush x:Key="TitlebarBackgroundDarkBrush"
+                     Color="#141426" />
+    <SolidColorBrush x:Key="TitlebarBackgroundLightBrush"
+                     Color="#141426" />
+    <SolidColorBrush x:Key="StatusbarBackgroundBrush"
+                     Color="#141426" />
+
+    <!-- Splitview Pane -->
+    <SolidColorBrush x:Key="SplitViewBackgroundBrush"
+                     Color="#8C5E74" />
+    <SolidColorBrush x:Key="SplitViewForegroundBrush"
+                     Color="#141426" />
+    <SolidColorBrush x:Key="HamburgerForegroundBrush"
+                     Color="#8882A8" />
+
+    <!-- Splitview Content -->
+    <SolidColorBrush x:Key="PageBackgroundBrush"
+                     Color="#D9BFD0" />
+    <SolidColorBrush x:Key="PageForegroundBrush"
+                     Color="#544759" />
+
+    <!-- Default Accent Color -->
+    <Color x:Key="DefaultAccentColor">#8882A8</Color>
+
+</ResourceDictionary>
