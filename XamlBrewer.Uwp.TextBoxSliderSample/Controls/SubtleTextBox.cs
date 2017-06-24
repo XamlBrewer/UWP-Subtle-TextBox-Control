@@ -12,6 +12,7 @@ namespace XamlBrewer.Uwp.Controls
     public class SubtleTextBox : TextBox
     {
         private const double HighOpacity = 1.0;
+        private const int Duration = 500;
         private bool isInTextBlockMode = false;
         private DispatcherTimer timer = new DispatcherTimer();
 
@@ -86,6 +87,7 @@ namespace XamlBrewer.Uwp.Controls
         {
             // Create a specific instance of the brushes to animate.
             // Otherwise it will affect all controls on the surface.
+            // (Warning: assumes you're using a SolidColorBrush)
             BorderBrush = new SolidColorBrush((BorderBrush as SolidColorBrush).Color);
             Background = new SolidColorBrush((Background as SolidColorBrush).Color);
 
@@ -119,7 +121,7 @@ namespace XamlBrewer.Uwp.Controls
             {
                 From = from,
                 To = to,
-                Duration = new Duration(TimeSpan.FromMilliseconds(500)),
+                Duration = new Duration(TimeSpan.FromMilliseconds(Duration)),
                 EnableDependentAnimation = true
             };
             Storyboard.SetTarget(animation, BorderBrush);
@@ -130,7 +132,7 @@ namespace XamlBrewer.Uwp.Controls
             {
                 From = from,
                 To = to,
-                Duration = new Duration(TimeSpan.FromMilliseconds(500)),
+                Duration = new Duration(TimeSpan.FromMilliseconds(Duration)),
                 EnableDependentAnimation = true
             };
             Storyboard.SetTarget(animation, Background);
